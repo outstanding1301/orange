@@ -1,0 +1,58 @@
+.item {
+    display: inline-block; 
+    margin: 5px;
+}
+
+.frame {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px #00000085;
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: all .1s ease-in-out;
+}
+
+.frame:hover {
+    background-color: #aecaff;
+    box-shadow: 0px 0px 5px 1px #133e8f;
+    transform: scale(1.07);
+}
+
+.frame:hover ~ .name {
+    color: #dfeaff;
+    transform: scale(1.07);
+}
+
+.icon {
+    color: #242424;
+    font-size: 50px;
+    transition: all .1s ease-in-out;
+}
+
+.frame:hover > .icon {
+    color: #ffffff;
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+}
+
+.name {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: normal;
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(49, 49, 49);
+    transition: all .1s ease-in-out;
+}
